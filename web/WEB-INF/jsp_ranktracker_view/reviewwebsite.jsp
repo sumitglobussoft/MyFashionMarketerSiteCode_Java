@@ -2347,6 +2347,7 @@
                 $.ajax({
                     type: 'GET',
                     url: 'http://localhost:8087/Globuswooclonecrawler/Reviewsite',
+//                    url: 'http://tracker.myfashionmarketer.com/Globuswooclonecrawler/Reviewsite',
                     data: "websitename=" + domain,
                     beforeSend: function (xhr) {
                         showLoader();
