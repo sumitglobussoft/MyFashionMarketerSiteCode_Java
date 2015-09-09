@@ -8,6 +8,7 @@ package ranktracker.action;
 import com.opensymphony.xwork2.ActionSupport;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -47,6 +48,14 @@ public class ReviewAction extends ActionSupport {
 
     private WebsiteReviewDao objReviewDao;
 
+    public boolean isWebsiteExists(String sitename) {
+        try {
+            return ((HttpURLConnection) (new URL(sitename)).openConnection()).getResponseCode() == 200;
+        } catch (Exception e) {
+        }
+        return false;
+    }
+
     public void checkExistency() throws IOException, JSONException {
 
         objResponse = ServletActionContext.getResponse();//getting response object
@@ -55,10 +64,19 @@ public class ReviewAction extends ActionSupport {
         JSONObject result = new JSONObject();// declaring & creating the JSONObject
 
         String sitename = ServletActionContext.getRequest().getParameter("sitename");
-        sitename = (new URL(sitename)).getHost().replace("www.", "");
 
-        result.put("domain", sitename);
-        result.put("result", objReviewDao.isExists(sitename) ? 1 : 0);
+        String newsitename = (new URL(sitename)).getHost().replace("www.", "");
+        result.put("domain", newsitename);
+        
+        if (objReviewDao.isExists(newsitename)) {
+            result.put("result", 1);
+        } else {
+            if (!isWebsiteExists(sitename)) {
+                result.put("result", 204);
+            } else {
+                result.put("result", 0);
+            }
+        }
 
         objResponse.setContentType("text");
         objResponse.setHeader("Cache-Control", "no-cache");
@@ -149,4 +167,5 @@ public class ReviewAction extends ActionSupport {
     public void setObjWebsiteReview(WebsiteReviewService objWebsiteReview) {
         this.objWebsiteReview = objWebsiteReview;
     }
+
 }

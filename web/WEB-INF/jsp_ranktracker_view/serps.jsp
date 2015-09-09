@@ -5,6 +5,14 @@
         
         margin-left:0px;
     }
+    .panel-dark > .panel-heading {
+        background-color: #526069 !important;
+        border-color: #526069;
+        color: #fff;
+        padding: 0;
+    }
+    .well{border: medium none;}
+    .current{background: #62A8EA;}
  </style>   
 <%
     if (session.getAttribute("customerID") == null) {
@@ -43,7 +51,7 @@
         <article class="col-sm-12 col-md-12 col-lg-12">
 
             <!-- Widget ID (each widget will need unique ID)-->
-            <div class="jarviswidget" id="wid-id-0" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+            <div class="jarviswidget panel panel-bordered panel-dark" id="wid-id-0" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
                 <!-- widget options:
                 usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 
@@ -57,17 +65,16 @@
                 data-widget-sortable="false"
 
                 -->
-                <header>
-                    <span class="widget-icon"> <i class="fa fa-clock-o"></i> </span>
-                    <h2>Keywords Up</h2>
-                </header>
+               <div class="panel-heading">
+                        <h2 class="panel-title">  <i class="fa fa-clock-o"></i> Keywords Up</h2>
+                    </div>
 
                 <s:if test="%{getRankComparision().isEmpty()}"> 
 
                 </s:if>
                 <s:else>
                     <!-- widget div-->
-                    <div>
+                    <div class="panel-body">
                         <!-- start row -->
                         <div class="row">
 
@@ -159,7 +166,7 @@
         <article class="col-sm-12 col-md-12 col-lg-12">
 
             <!-- Widget ID (each widget will need unique ID)-->
-            <div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+            <div class="jarviswidget panel panel-bordered panel-dark" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
                 <!-- widget options:
                 usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
 
@@ -173,10 +180,10 @@
                 data-widget-sortable="false"
 
                 -->
-                <header>
-                    <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-                    <h2>Serp Campaigns</h2>
-                    <form action="searchSerpsCampaign.action" name="searchCampaign" id="searchCampaign" method="get">
+               
+                         <div class="panel-heading">
+                        <h2 class="panel-title">  <i class="fa fa-edit"></i>  Serp Campaigns
+                              <form action="searchSerpsCampaign.action" name="searchCampaign" id="searchCampaign" method="get">
                         <div class="widget-toolbar">
                             <span>Using (<s:property value="activeKeywordsCount" />/<s:property value="allowedKeywordsCount" />) Keywords</span>
                         </div>
@@ -201,12 +208,11 @@
                                 <i class="fa fa-search fa-fw"></i>Search
                             </button>
                         </div>
-                    </form>
-
-                </header>
+                    </form></h2>
+                    </div>
 
                 <!-- widget div-->
-                <div>
+                <div class="panel-body">
 
                     <!-- widget edit box -->
                     <div class="jarviswidget-editbox">

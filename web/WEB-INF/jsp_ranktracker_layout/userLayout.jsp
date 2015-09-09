@@ -45,6 +45,8 @@
         <!--<link rel="stylesheet" type="text/css" media="screen" href="https://s3.amazonaws.com/css-globustracker/admin/demo.css">-->
         <link href="views/css_ranktracker/admin/demo.css" rel="stylesheet" type="text/css"/>
         <link href="views/css_ranktracker/custom.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="views/css_ranktracker/bootstrap-extend.min.css" rel="stylesheet" type="text/css"/>
 
         <!-- GOOGLE FONT -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">

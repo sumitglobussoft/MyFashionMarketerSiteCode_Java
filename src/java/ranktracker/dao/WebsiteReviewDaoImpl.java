@@ -206,11 +206,20 @@ public class WebsiteReviewDaoImpl extends HibernateDaoSupport implements Website
                 headingelement = criteria.list();
             }
 
-            String h1array[] = headingelement.get(0).getH1elements().split("#");
-            String h2array[] = headingelement.get(0).getH2elements().split("#");
-            String h3array[] = headingelement.get(0).getH3elements().split("#");
-            String h4array[] = headingelement.get(0).getH4elements().split("#");
-            String h5array[] = headingelement.get(0).getH5elements().split("#");
+            String h1array[] = null;
+            String h2array[] = null;
+            String h3array[] = null;
+            String h4array[] = null;
+            String h5array[] = null;
+
+            try {
+                h1array = headingelement.get(0).getH1elements().split("#");
+                h2array = headingelement.get(0).getH2elements().split("#");
+                h3array = headingelement.get(0).getH3elements().split("#");
+                h4array = headingelement.get(0).getH4elements().split("#");
+                h5array = headingelement.get(0).getH5elements().split("#");
+            } catch (Exception e) {
+            }
 
             try {
 

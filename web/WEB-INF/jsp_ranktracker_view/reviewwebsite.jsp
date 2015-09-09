@@ -79,7 +79,21 @@
                                     <input type="submit" value="Website Review" style="margin-top: 1%;" class="btn btn-primary" >
                                 </div><br>
                             </form>
+                            <button  id="timerButton" style="visibility: hidden" data-toggle="modal" data-target="#myModal"></button>
                         </div><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="container">
+                            <div id="countdown" class="text-center"></div><br/>
+                            <p>Please wait ...</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -989,10 +1003,10 @@
                                                 </h3>
                                             </div>
 
-<!--                                            <div id="set31Loader">
+                                            <div id="set31Loader">
                                                 <div style="text-align:center; display: block" ><img width="50" height="50" src="views/images_ranktracker/review/loader_image.gif"/></div>
-                                            </div>-->
-<!--                                            <div id="mobileTime">
+                                            </div>
+                                            <div id="mobileTime">
                                                 <div class="criterium-content">
                                                     <div class="part progressbar ">
                                                         <div class="content">
@@ -1001,10 +1015,10 @@
                                                     </div>
 
                                                 </div>
-                                            </div>-->
-<!--                                            <div class="criterium-quicktips"></div>
-                                            <div class="delimiter"></div></div>-->
-<!--                                        <div id="criterium-mobile_optimization" class="criterium result-3 ">
+                                            </div>
+                                            <div class="criterium-quicktips"></div>
+                                            <div class="delimiter"></div></div>
+                                        <div id="criterium-mobile_optimization" class="criterium result-3 ">
                                             <div class="criterium-head">
                                                 <span class="prio-score hidden">20</span>
 
@@ -1039,7 +1053,7 @@
                                                 </div>
                                             </div>
                                             <div class="criterium-quicktips">Optimize your website for Mobile browsing</div>
-                                            <div class="delimiter"></div></div>-->
+                                            <div class="delimiter"></div></div>
                                     </div>
                                 </div>
                             </div>
@@ -1905,81 +1919,81 @@
                                         <div class="delimiter"></div></div>
 
                                     <!-- linkedin_brand_page -->
-<!--                                    <div id="criterium-google_plus_page" class="criterium result-1 ">
-                                        <div class="criterium-head">
-                                            <span class="crit-score-pond hidden">1.3574660633484</span>
-
-                                            <h3 class="simple-tooltip" data-placement="left" style="margin-left: 13%;" rel="tooltip" data-original-title="Passed">
-                                                <span class=""></span>Linkedin
-                                            </h3>
-                                        </div>
-                                        <div id="googleplus">
-                                        <div id="set56Loader">
-                                            <div style="text-align:center; display: block" ><img width="50" height="50" src="views/images_ranktracker/review/loader_image.gif"/></div>
-                                        </div>-->
-<!--                                        <div id="linkedinAccount">
-                                            <div class="criterium-content">
-                                                <div class="part image cover-image">
-                                                    <img src=""  alt="" id="linkedImage" />
-                                                </div>
-
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Follower</p>
-                                                    <p id="linkedFollower"></p>
-                                                </div>
-
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Description</p>
-                                                    <p id="linkedDescription"></p>
-                                                </div>
-
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Specialties</p>
-                                                    <p id="linkedSpecialties"></p>
-                                                </div>
-
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Website</p>
-                                                    <p id="linkedWebsite"></p>
-                                                </div>
-
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Industry</p>
-                                                    <p id="linkedIndustry"></p>
-                                                </div>
-
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Type</p>
-                                                    <p id="linkedType"></p>
-                                                </div>
-
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Headquater</p>
-                                                    <p id="linkedHeadquater"></p>
-                                                </div>
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Company</p>
-                                                    <p id="linkedCompany"></p>
-                                                </div>
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Founded</p>
-                                                    <p id="linkedFounded"></p>
-                                                </div>
-                                                <div class="part text text-block fb-text-bloc">
-                                                    <p>Employee</p>
-                                                    <p id="linkedEmployee"></p>
-                                                </div>
-
-                                            </div>
-                                        </div>-->
-                                        <!--</div>-->
-<!--                                        <div class="criterium-advice-click"><span>?</span></div>
-                                        <div class="criterium-advice">
-                                            This page is your business listing in Google+. Being active in this social network is important for claiming your brand, influencing your search engine rankings and interacting with your network. You might also consider <a rel="nofollow" href="http://www.google.com/business/" target="_blank">managing your profile</a> with <a rel="" nofollow="" href="http://blog.woorank.com/2014/06/google-places-for-business-is-google-my-business/" target="_blank">Google My Business (formerly Google Places)</a>.
-
-                                        </div>
-
-                                        <div class="delimiter"></div></div>-->
+                                    <!--                                    <div id="criterium-google_plus_page" class="criterium result-1 ">
+                                                                            <div class="criterium-head">
+                                                                                <span class="crit-score-pond hidden">1.3574660633484</span>
+                                    
+                                                                                <h3 class="simple-tooltip" data-placement="left" style="margin-left: 13%;" rel="tooltip" data-original-title="Passed">
+                                                                                    <span class=""></span>Linkedin
+                                                                                </h3>
+                                                                            </div>
+                                                                            <div id="googleplus">
+                                                                            <div id="set56Loader">
+                                                                                <div style="text-align:center; display: block" ><img width="50" height="50" src="views/images_ranktracker/review/loader_image.gif"/></div>
+                                                                            </div>
+                                                                            <div id="linkedinAccount">
+                                                                                <div class="criterium-content">
+                                                                                    <div class="part image cover-image">
+                                                                                        <img src=""  alt="" id="linkedImage" />
+                                                                                    </div>
+                                    
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Follower</p>
+                                                                                        <p id="linkedFollower"></p>
+                                                                                    </div>
+                                    
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Description</p>
+                                                                                        <p id="linkedDescription"></p>
+                                                                                    </div>
+                                    
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Specialties</p>
+                                                                                        <p id="linkedSpecialties"></p>
+                                                                                    </div>
+                                    
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Website</p>
+                                                                                        <p id="linkedWebsite"></p>
+                                                                                    </div>
+                                    
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Industry</p>
+                                                                                        <p id="linkedIndustry"></p>
+                                                                                    </div>
+                                    
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Type</p>
+                                                                                        <p id="linkedType"></p>
+                                                                                    </div>
+                                    
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Headquater</p>
+                                                                                        <p id="linkedHeadquater"></p>
+                                                                                    </div>
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Company</p>
+                                                                                        <p id="linkedCompany"></p>
+                                                                                    </div>
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Founded</p>
+                                                                                        <p id="linkedFounded"></p>
+                                                                                    </div>
+                                                                                    <div class="part text text-block fb-text-bloc">
+                                                                                        <p>Employee</p>
+                                                                                        <p id="linkedEmployee"></p>
+                                                                                    </div>
+                                    
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                            <div class="criterium-advice-click"><span>?</span></div>
+                                                                            <div class="criterium-advice">
+                                                                                This page is your business listing in Google+. Being active in this social network is important for claiming your brand, influencing your search engine rankings and interacting with your network. You might also consider <a rel="nofollow" href="http://www.google.com/business/" target="_blank">managing your profile</a> with <a rel="" nofollow="" href="http://blog.woorank.com/2014/06/google-places-for-business-is-google-my-business/" target="_blank">Google My Business (formerly Google Places)</a>.
+                                    
+                                                                            </div>
+                                    
+                                                                            <div class="delimiter"></div></div>-->
 
                                     <!--Pinterest Page-->
 
@@ -2175,6 +2189,14 @@
             </div>
         </div>
 
+        <style>
+            #exist-dialog{
+                visibility: hidden;
+            }
+        </style>
+        <div id="exist-dialog" title="Notification">
+            <p>Website does not exist</p>
+        </div>                              
 
 
 
@@ -2234,7 +2256,7 @@
                 $("#directoryBrowsing").show();
                 $("#serverSignature").show();
                 $("#mobileRendering").show();
-//                $("#mobileTime").show();
+                $("#mobileTime").show();
                 $("#mobileOptimization").show();
                 $("#RelatedWebsite").show();
                 $("#PageRank").show();
@@ -2284,7 +2306,7 @@
                 $("#directoryBrowsing").hide();
                 $("#serverSignature").hide();
                 $("#mobileRendering").hide();
-//                $("#mobileTime").hide();
+                $("#mobileTime").hide();
                 $("#mobileOptimization").hide();
                 $("#RelatedWebsite").hide();
                 $("#PageRank").hide();
@@ -2328,7 +2350,11 @@
                             sitename: $('#sitename_forreview').val()
                         },
                 function (output) {
-                    if (output.result === 1) {
+                    if (output.result === 204) {
+                        $('#exist-dialog').css('visibility', 'visible');
+                        $("#dialog").dialog();
+                    }
+                    else if (output.result === 1) {
                         timeout = 500;
                         setData(output.domain);
                     }
@@ -2336,6 +2362,8 @@
                         hideContainer();
                         runCrawler(output.domain);
                         timeout = 120000;
+                        startTimer();
+                        $('#timerButton').click();
                         setData(output.domain);
                     }
                 });
@@ -2346,8 +2374,8 @@
 
                 $.ajax({
                     type: 'GET',
-                    url: 'http://localhost:8087/Globuswooclonecrawler/Reviewsite',
-//                    url: 'http://tracker.myfashionmarketer.com/Globuswooclonecrawler/Reviewsite',
+//                    url: 'http://localhost:8087/Globuswooclonecrawler/Reviewsite',
+                    url: 'http://tracker.myfashionmarketer.com/Globuswooclonecrawler/Reviewsite',
                     data: "websitename=" + domain,
                     beforeSend: function (xhr) {
                         showLoader();
@@ -2745,9 +2773,9 @@
                                     if (key === 'facebookDescription') {
                                         document.getElementById("facebookDescription").textContent = value;
                                     }
-//                                    if (key === 'mobileLoadTime') {
-//                                        document.getElementById("mobileLoadTime").textContent = value;
-//                                    }
+                                    if (key === 'mobileLoadTime') {
+                                        document.getElementById("mobileLoadTime").textContent = value;
+                                    }
                                     if (key === 'trafficEstimation') {
                                         document.getElementById("trafficEstimation").textContent = value;
                                     }
@@ -2888,7 +2916,13 @@
                 $(this).css('display', 'none');
                 $(".more-less .more-block").css('height', adjustheight).css('overflow', 'hidden');
             });
+            $('#home2').addClass('minified');
         </script>
+        <style>
+            #home2 {
+                overflow-y: hidden !important;
+            }
+        </style>
 
 
 
@@ -2901,7 +2935,34 @@
         <script src="views/js_ranktracker/review/moment.js" type="text/javascript"></script>
         <script src="views/js_ranktracker/review/review.min.js" type="text/javascript"></script>
         <script src="views/js_ranktracker/review/commons.min.js" type="text/javascript"></script>
+        <script src="views/js_ranktracker/review/jquery.countdown360.js" type="text/javascript"></script>
 
+
+        <script>
+            var time = 120;
+
+            var countdown = $("#countdown").countdown360({
+                radius: 60,
+                seconds: time,
+                fontColor: '#FFFFFF',
+                autostart: false,
+                onComplete: function () {
+                    console.log('done');
+                    $('#myModal').modal('hide');
+                    $('#myModal').removeClass('in');
+                    $('.modal-backdrop').removeClass('in');
+                    $('.modal-backdrop').removeClass('fade');
+                    $('.modal-backdrop').removeClass('modal-backdrop');
+                }
+            });
+            countdown.start();
+            console.log('countdown360 ', countdown);
+
+            function startTimer() {
+                countdown.start();
+            }
+
+        </script>
 
     </body>
 </html>

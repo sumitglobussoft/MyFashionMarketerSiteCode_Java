@@ -9,7 +9,16 @@
         response.sendRedirect("home.action");
     }
 %> 
-
+<style type="text/css">
+    .panel-dark > .panel-heading {
+        background-color: #526069 !important;
+        border-color: #526069;
+        color: #fff;
+        padding: 0;
+    }
+    .well{border: medium none;}
+    .current{background: #62A8EA;}
+</style>
 <div class="row">
     <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
         <h1 class="page-title txt-color-blueDark">
@@ -38,7 +47,7 @@
             <article class="col-sm-12 col-md-12 col-lg-12">
 
                 <!-- Widget ID (each widget will need unique ID)-->
-                <div class="jarviswidget" id="wid-id-0" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+                <div class="jarviswidget panel panel-bordered panel-dark" id="wid-id-0" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
                     <!-- widget options:
                     usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
     
@@ -52,18 +61,16 @@
                     data-widget-sortable="false"
     
                     -->
-                    <header>
-                        <span class="widget-icon"> <i class="fa fa-clock-o"></i> </span>
-                        <h2>Keywords Up</h2>
-
-                    </header>
+                    <div class="panel-heading">
+                        <h2 class="panel-title">  <i class="fa fa-clock-o"></i> Keywords Up</h2>
+                    </div>
 
                     <s:if test="%{getRankComparision().isEmpty()}"> 
 
                     </s:if>
                     <s:else>
                         <!-- widget div-->
-                        <div>
+                        <div class="panel-body">
                             <!-- start row -->
                             <div class="row">
 
@@ -155,7 +162,7 @@
             <article class="col-sm-12 col-md-12 col-lg-6">
 
                 <!-- Widget ID (each widget will need unique ID)-->
-                <div class="jarviswidget" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+                <div class="jarviswidget panel panel-bordered panel-dark" id="wid-id-1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
                     <!-- widget options:
                     usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
     
@@ -169,13 +176,13 @@
                     data-widget-sortable="false"
     
                     -->
-                    <header>
-                        <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
-                        <h2>Serp Campaigns</h2>
-                    </header>
+
+                    <div class="panel-heading">
+                        <h2 class="panel-title">  <i class="fa fa-edit"></i>  Serp Campaigns</h2>
+                    </div>
 
                     <!-- widget div-->
-                    <div>
+                    <div class="panel-body">
 
                         <!-- widget edit box -->
                         <div class="jarviswidget-editbox">
@@ -187,7 +194,7 @@
                             <!-- widget content -->
                             <div class="widget-body no-padding">
 
-                                <div class="custom-scroll table-responsive" style="height:290px; overflow-y: scroll;">
+                                <div class="custom-scroll table-responsive" style="height:290px;">
                                     <s:if test="%{getLstCampaigns().isEmpty()}"> 
                                         <s:form name="campaignDetail" >
                                             <s:hidden name="campaignId" />
@@ -258,7 +265,7 @@
             <article class="col-sm-12 col-md-12 col-lg-6">
 
                 <!-- Widget ID (each widget will need unique ID)-->
-                <div class="jarviswidget" id="wid-id-2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
+                <div class="jarviswidget panel panel-bordered panel-dark" id="wid-id-2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-custombutton="false">
                     <!-- widget options:
                     usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
     
@@ -272,14 +279,13 @@
                     data-widget-sortable="false"
     
                     -->
-                    <header>
-                        <span class="widget-icon"> <i class="fa fa-video-camera"></i> </span>
-                        <h2>Video Campaigns</h2>
 
-                    </header>
+                    <div class="panel-heading">
+                        <h2 class="panel-title">  <i class="fa fa-video-camera"></i>  Video Campaigns</h2>
+                    </div>
 
                     <!-- widget div-->
-                    <div>
+                    <div class="panel-body">
 
                         <!-- widget edit box -->
                         <div class="jarviswidget-editbox">
@@ -291,7 +297,7 @@
                             <!-- widget content -->
                             <div class="widget-body no-padding">
 
-                                <div class="custom-scroll table-responsive" style="height:290px; overflow-y: scroll;">
+                                <div class="custom-scroll table-responsive" style="height:290px;">
 
 
                                     <s:if test="%{getLstCampaigns().isEmpty()}"> 
@@ -891,7 +897,7 @@
                                         {
                                             jString: jString
                                         },
-                                function(jMessage) {
+                                function (jMessage) {
                                     alertMes = jMessage.message;
                                     $('#se1Loader').css({display: 'none'});
                                     if (alertMes == "Campaign Value required") {
@@ -928,7 +934,7 @@
                                         {
                                             jString: jString
                                         },
-                                function(jMessage) {
+                                function (jMessage) {
                                     alertMes = jMessage.message;
                                     $('#se1Loader').css({display: 'none'});
                                     if (alertMes === "Campaign Value required") {
@@ -1000,7 +1006,7 @@
                                             {
                                                 jString: jString
                                             },
-                                    function(jMessage) {
+                                    function (jMessage) {
                                         alertMes = jMessage.message;
                                         $('#se1Loader').css({display: 'none'});
                                         window.location = "campaigns.action";
@@ -1032,7 +1038,7 @@
                                                     {
                                                         jString: jString
                                                     },
-                                            function(jMessage) {
+                                            function (jMessage) {
                                                 alertMes = jMessage.message;
                                                 window.location = "campaigns.action";
                                             },
@@ -1068,7 +1074,7 @@
                                                     {
                                                         jString: jString
                                                     },
-                                            function(jMessage) {
+                                            function (jMessage) {
                                                 alertMes = jMessage.message;
 
                                                 window.location = "campaigns.action";
@@ -1135,7 +1141,7 @@
                 {
                     jString: jString
                 },
-        function(jMessage) {
+        function (jMessage) {
             alertMes = jMessage.message;
             window.location = "campaigns.action";
         },
@@ -1150,7 +1156,7 @@
                 {
                     jString: jString
                 },
-        function(jMessage) {
+        function (jMessage) {
             alertMes = jMessage.message;
             $('#se1Loader').css({display: 'none'});
             window.location = "campaigns.action";

@@ -444,7 +444,7 @@ body.settings #left-nav{margin-top:0;padding-top:0}
 		border-bottom:4px solid #000;
 	content:"\2191"}
 	.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{top:auto;bottom:100%;margin-bottom:1px}
-	.modal-open .dropdown-menu{z-index:2050}
+/*	.modal-open .dropdown-menu{z-index:2050}
 	.modal-open .dropdown.open{*z-index:2050}
 	.modal-open .popover{z-index:2060}
 	.modal-open .tooltip{z-index:2070}
@@ -510,7 +510,7 @@ body.settings #left-nav{margin-top:0;padding-top:0}
 	-webkit-border-radius:0 0 5px 5px;
 	-moz-border-radius:0 0 5px 5px;
 	border-radius:0 0 5px 5px;
-	overflow:hidden;position:relative}
+	overflow:hidden;position:relative}*/
 .tooltip{position:absolute;
 	z-index:1020;
 	display:block;
