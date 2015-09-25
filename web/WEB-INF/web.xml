@@ -118,7 +118,7 @@
           
     <!--configuring session timeout -->
     <session-config>
-        <session-timeout>45</session-timeout>
+        <session-timeout>240</session-timeout>
     </session-config>
        
     <!-- configuring error code and jsp file to display when error occur -->

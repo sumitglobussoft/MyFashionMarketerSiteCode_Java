@@ -101,7 +101,7 @@
 			</textField>
 			<image scaleImage="RealSize">
 				<reportElement x="12" y="6" width="350" height="49" forecolor="#000000" uuid="b49fd9ca-ac63-4eba-9e0d-e0ad9960f165"/>
-				<imageExpression><![CDATA["https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://s3.amazonaws.com/images-globustracker/myfashionmarketer.jpg"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement positionType="FixRelativeToBottom" x="15" y="107" width="315" height="22" isRemoveLineWhenBlank="true" uuid="dd3f1c93-3188-47bf-ae72-fe712162d8f0"/>

@@ -133,7 +133,7 @@
 			</textField>
 			<image scaleImage="RealSize">
 				<reportElement x="11" y="5" width="350" height="49" forecolor="#000000" uuid="863d4ca3-a705-486b-b6c9-b0357e6c325c"/>
-				<imageExpression><![CDATA["https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://s3.amazonaws.com/images-globustracker/myfashionmarketer.jpg"]]></imageExpression>
 			</image>
 			<image scaleImage="RetainShape" onErrorType="Blank">
 				<reportElement x="15" y="62" width="180" height="42" isRemoveLineWhenBlank="true" uuid="8476740e-744f-40c6-b090-b1415c50a2fc"/>

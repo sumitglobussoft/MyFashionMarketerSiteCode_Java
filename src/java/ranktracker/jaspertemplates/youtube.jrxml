@@ -107,7 +107,7 @@ where A.CampaignID = 663 and A.Visibility = 1]]>
 			</rectangle>
 			<image scaleImage="RealSize">
 				<reportElement x="5" y="7" width="285" height="40" forecolor="#000000" uuid="a2f0b891-72ae-4c11-9cf9-9e94df4929db"/>
-				<imageExpression><![CDATA["https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://s3.amazonaws.com/images-globustracker/myfashionmarketer.jpg"]]></imageExpression>
 			</image>
 			<textField isBlankWhenNull="true">
 				<reportElement positionType="FixRelativeToBottom" x="12" y="103" width="315" height="22" isRemoveLineWhenBlank="true" uuid="94bb9eca-6347-4650-af47-51bb72bda923"/>

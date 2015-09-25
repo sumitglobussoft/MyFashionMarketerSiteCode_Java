@@ -81,12 +81,12 @@
             <div class="header_logo">
                 <s:if test="%{#session.customerName!=null}">
                     <a href="campaigns.action">
-                        <img src="https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"  alt="" />
+                        <img src=""  alt="" />
                     </a>
                 </s:if>
                 <s:else>
                     <a href="home.action">
-                        <img src="https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"  alt="" />
+                        <img src=""  alt="" />
                     </a>
                 </s:else>
             </div>

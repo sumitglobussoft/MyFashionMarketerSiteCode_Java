@@ -61,8 +61,8 @@
 
                 -->
                 <div class="panel-heading">
-                        <h2 class="panel-title">  <i class="fa fa-clock-o"></i> Keywords Up</h2>
-                    </div>
+                    <h2 class="panel-title">  <i class="fa fa-clock-o"></i> Keywords Up</h2>
+                </div>
                 <s:if test="%{getRankComparision().isEmpty()}"> 
 
                 </s:if>
@@ -80,50 +80,50 @@
                                         <s:iterator value="rankComparision">
                                             <div class="col-md-offset-1 col-sm-2">
 
-                                                <div class="btn green-seagreen text-center">
+                                                <div class="btn green-seagreen text-center" style="min-height: 142px;">
                                                     <h5>Top 5</h5>
                                                     <code><s:property value="keywordsRankBelow5" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow5" /> change: <s:property value="currentkeywordsRankBelow5" /></h5>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-sm-2">
 
-                                                <div class="btn blue-light text-center">
+                                                <div class="btn blue-light text-center" style="min-height: 142px;">
                                                     <h5>Top 10</h5>
                                                     <code><s:property value="keywordsRankBelow10" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow10" /> change: <s:property value="currentkeywordsRankBelow10" /></h5>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-sm-2">
 
-                                                <div class="btn red-flamingo text-center">
+                                                <div class="btn red-flamingo text-center" style="min-height: 142px;">
                                                     <h5>Top 20</h5>
                                                     <code><s:property value="keywordsRankBelow20" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow20" /> change: <s:property value="currentkeywordsRankBelow20" /></h5>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-sm-2">
 
-                                                <div class="btn blue-hoki text-center">
+                                                <div class="btn blue-hoki text-center" style="min-height: 142px;">
                                                     <h5>Top 30</h5>
                                                     <code><s:property value="keywordsRankBelow30" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow30" /> change: <s:property value="currentkeywordsRankBelow30" /></h5>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-sm-2">
 
-                                                <div class="btn yellow-gold text-center">
+                                                <div class="btn yellow-gold text-center" style="min-height: 142px;">
                                                     <h5>Top 100</h5>
                                                     <code><s:property value="keywordsRankBelow100" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow100" /> change: <s:property value="currentkeywordsRankBelow100" /></h5>
                                                 </div>
 
                                             </div>
@@ -174,37 +174,37 @@
                 data-widget-sortable="false"
 
                 -->
-               
- <div class="panel-heading">
-                        <h2 class="panel-title">  <i class="fa fa-video-camera"></i> Video Campaigns
-                         <form action="searchVideoCampaign.action" name="searchCampaign" id="searchCampaign" method="get">
-                        <div class="widget-toolbar">
-                            <span>Using (<s:property value="activeKeywordsCount" />/<s:property value="allowedKeywordsCount" />) Keywords</span>
-                        </div>
-                        <div class="widget-toolbar">
-                            <!-- add: non-hidden - to disable auto hide -->
-                            <div class="btn-group">
-                                <input type="text" hidden name="searchVideoCampaign" value="Search Campaign" autocomplete="off" id="videocamp"/>
-                                <button class="btn dropdown-toggle btn-xs btn-default" data-toggle="dropdown" id="dropdownvideo">
-                                    Search Campaign <i class="fa fa-caret-down"></i>
-                                </button>
-                                <ul class="dropdown-menu js-status-update pull-right">
-                                    <s:iterator value="lstCampaignsSearch" status="temp">
-                                        <s:if test="%{campaignType.equals('video')}">
-                                            <li>
-                                                <a><s:property value="campaign"/></a>
-                                            </li> 
-                                        </s:if>
-                                    </s:iterator>
-                                </ul>
+
+                <div class="panel-heading">
+                    <h2 class="panel-title">  <i class="fa fa-video-camera"></i> Video Campaigns
+                        <form action="searchVideoCampaign.action" name="searchCampaign" id="searchCampaign" method="get">
+                            <div class="widget-toolbar">
+                                <span>Using (<s:property value="activeKeywordsCount" />/<s:property value="allowedKeywordsCount" />) Keywords</span>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-xs">
-                                <i class="fa fa-search fa-fw"></i>Search
-                            </button>
-                        </div>
-                    </form>
-                        </h2>
-                    </div>
+                            <div class="widget-toolbar">
+                                <!-- add: non-hidden - to disable auto hide -->
+                                <div class="btn-group">
+                                    <input type="text" hidden name="searchVideoCampaign" value="Search Campaign" autocomplete="off" id="videocamp"/>
+                                    <button class="btn dropdown-toggle btn-xs btn-default" data-toggle="dropdown" id="dropdownvideo">
+                                        Search Campaign <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu js-status-update pull-right">
+                                        <s:iterator value="lstCampaignsSearch" status="temp">
+                                            <s:if test="%{campaignType.equals('video')}">
+                                                <li>
+                                                    <a><s:property value="campaign"/></a>
+                                                </li> 
+                                            </s:if>
+                                        </s:iterator>
+                                    </ul>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-xs">
+                                    <i class="fa fa-search fa-fw"></i>Search
+                                </button>
+                            </div>
+                        </form>
+                    </h2>
+                </div>
                 <!-- widget div-->
                 <div class="panel-body">
 
@@ -283,7 +283,7 @@
 
     <!--Add Campaign Modal -->
     <s:form action="" id="addvideoform" onsubmit="return false;" autocomplete="off">
-       <div class="modal fade" id="addvideomodal" style="top:39%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="addvideomodal" style="top:39%" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -405,7 +405,7 @@
                 {
                     jString: jString
                 },
-        function(jMessage) {
+        function (jMessage) {
             alertMes = jMessage.message;
             if (alertMes == "Campaign Value required") {
                 window.location = "video.action";
@@ -465,7 +465,7 @@
                     {
                         jString: jString
                     },
-            function(jMessage) {
+            function (jMessage) {
                 alertMes = jMessage.message;
                 window.location = "video.action";
             },
@@ -496,7 +496,7 @@
                             {
                                 jString: jString
                             },
-                    function(jMessage) {
+                    function (jMessage) {
                         alertMes = jMessage.message;
                         window.location = "video.action";
                     },
@@ -541,7 +541,7 @@
                 {
                     jString: jString
                 },
-        function(jMessage) {
+        function (jMessage) {
             alertMes = jMessage.message;
             window.location = "video.action";
         },
@@ -553,7 +553,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 
 <script type="text/javascript">
-    $(".js-status-update a").click(function() {
+    $(".js-status-update a").click(function () {
         var selText = $(this).text();
         var $this = $(this);
         document.getElementById("videocamp").value = selText;

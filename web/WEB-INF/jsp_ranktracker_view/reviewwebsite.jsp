@@ -2355,13 +2355,13 @@
                         $("#dialog").dialog();
                     }
                     else if (output.result === 1) {
-                        timeout = 500;
+//                        timeout = 500;
                         setData(output.domain);
                     }
                     else if (output.result === 0) {
                         hideContainer();
                         runCrawler(output.domain);
-                        timeout = 120000;
+                        timeout = 90000;
                         startTimer();
                         $('#timerButton').click();
                         setData(output.domain);
@@ -2939,7 +2939,7 @@
 
 
         <script>
-            var time = 120;
+            var time = 90;
 
             var countdown = $("#countdown").countdown360({
                 radius: 60,
@@ -2947,7 +2947,7 @@
                 fontColor: '#FFFFFF',
                 autostart: false,
                 onComplete: function () {
-                    console.log('done');
+//                    console.log('done');
                     $('#myModal').modal('hide');
                     $('#myModal').removeClass('in');
                     $('.modal-backdrop').removeClass('in');

@@ -43,7 +43,7 @@
                 We request you to retry performing the action after some time.
             </p>
             <p class="go-back">
-                Please continue to our <a href="home.action">Home page</a>.
+                Please continue to our <a href="signIn.action">Home page</a>.
             </p>
         </div>
         <div id="container"></div>

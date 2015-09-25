@@ -70,7 +70,7 @@
 			</rectangle>
 			<image scaleImage="RealSize">
 				<reportElement x="12" y="5" width="350" height="49" forecolor="#000000" uuid="d06e0806-e11d-4544-ba0d-2546fd2c8374"/>
-				<imageExpression><![CDATA["https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://s3.amazonaws.com/images-globustracker/myfashionmarketer.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement positionType="FixRelativeToBottom" x="14" y="196" width="122" height="22" uuid="ccf8b441-9e61-4219-b88d-23418f42b768"/>

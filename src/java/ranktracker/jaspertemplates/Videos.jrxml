@@ -158,7 +158,7 @@ where A.CampaignID = 655 and A.Visibility = 1]]>
 			</rectangle>
 			<image scaleImage="RealSize">
 				<reportElement x="5" y="8" width="400" height="58" forecolor="#000000" uuid="a2f0b891-72ae-4c11-9cf9-9e94df4929db"/>
-				<imageExpression><![CDATA["https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://s3.amazonaws.com/images-globustracker/myfashionmarketer.jpg"]]></imageExpression>
 			</image>
 		</band>
 	</pageHeader>

@@ -43,7 +43,7 @@
 			</rectangle>
 			<image scaleImage="RealSize">
 				<reportElement x="8" y="7" width="280" height="32" uuid="240448cb-9a6d-4c50-8633-cf3239603710"/>
-				<imageExpression><![CDATA["https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://s3.amazonaws.com/images-globustracker/myfashionmarketer.jpg"]]></imageExpression>
 			</image>
 			<rectangle radius="10">
 				<reportElement positionType="FixRelativeToBottom" x="184" y="147" width="190" height="30" backcolor="#3399FF" uuid="8e793777-75b9-43ee-a550-83727678e36f"/>

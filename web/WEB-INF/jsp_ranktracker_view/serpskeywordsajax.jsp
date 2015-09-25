@@ -100,50 +100,50 @@
                                         <s:iterator value="rankComparision">
                                             <div class="col-md-offset-1 col-sm-2">
 
-                                                <div class="btn green-seagreen text-center">
+                                                <div class="btn green-seagreen text-center" style="min-height: 142px;">
                                                     <h5>Top 5</h5>
                                                     <code><s:property value="keywordsRankBelow5" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow5" /> change: <s:property value="currentkeywordsRankBelow5" /></h5>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-sm-2">
 
-                                                <div class="btn blue-light text-center">
+                                                <div class="btn blue-light text-center" style="min-height: 142px;">
                                                     <h5>Top 10</h5>
                                                     <code><s:property value="keywordsRankBelow10" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow10" /> change: <s:property value="currentkeywordsRankBelow10" /></h5>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-sm-2">
 
-                                                <div class="btn red-flamingo text-center">
+                                                <div class="btn red-flamingo text-center" style="min-height: 142px;">
                                                     <h5>Top 20</h5>
                                                     <code><s:property value="keywordsRankBelow20" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow20" /> change: <s:property value="currentkeywordsRankBelow20" /></h5>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-sm-2">
 
-                                                <div class="btn blue-hoki text-center">
+                                                <div class="btn blue-hoki text-center" style="min-height: 142px;">
                                                     <h5>Top 30</h5>
                                                     <code><s:property value="keywordsRankBelow30" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow30" /> change: <s:property value="currentkeywordsRankBelow30" /></h5>
                                                 </div>
 
                                             </div>
 
                                             <div class="col-sm-2">
 
-                                                <div class="btn yellow-gold text-center">
+                                                <div class="btn yellow-gold text-center" style="min-height: 142px;">
                                                     <h5>Top 100</h5>
                                                     <code><s:property value="keywordsRankBelow100" />/<s:property value="totalkeywords" /></code>
-                                                    <h5>vs: 0 change: +</h5>
+                                                    <h5>vs: <s:property value="previouskeywordsRankBelow100" /> change: <s:property value="currentkeywordsRankBelow100" /></h5>
                                                 </div>
 
                                             </div>
@@ -287,15 +287,15 @@
                                                                 <th style="text-align: center;">Page Rank</th>
                                                                 <th style="text-align: center;"><img src="https://s3.amazonaws.com/images_ranktracker/google_icon.png" style="border:none;" width="20" height="20" alt="" /></th>
                                                                 <th style="text-align: center;">Best Match Rank</th>
-                                                                <s:if test="%{daychangetab == 1}">
+                                                                    <s:if test="%{daychangetab == 1}">
                                                                     <th style="text-align: center;">Day</th>
-                                                                </s:if>
-                                                                <s:if test="%{weekchangetab == 1}">
+                                                                    </s:if>
+                                                                    <s:if test="%{weekchangetab == 1}">
                                                                     <th style="text-align: center;">Week</th>
-                                                                </s:if>       
-                                                                <s:if test="%{monthchangetab == 1}">
+                                                                    </s:if>       
+                                                                    <s:if test="%{monthchangetab == 1}">
                                                                     <th style="text-align: center;">Month</th>
-                                                                </s:if>
+                                                                    </s:if>
                                                                 <th style="text-align: center;">Last Updated</th>
                                                                 <th style="text-align: center;">Chart</th>
                                                                 <th style="text-align: center;">Edit</th>                                                
@@ -318,15 +318,15 @@
                                                                 <th style="text-align: center;">Keyword</th>
                                                                 <th style="text-align: center;"><img src="https://s3.amazonaws.com/images_ranktracker/yahooicon.png" width="20" height="20" alt="" /></th>
                                                                 <th style="text-align: center;">Best Match Rank</th>
-                                                                <s:if test="%{daychangetab == 1}">
+                                                                    <s:if test="%{daychangetab == 1}">
                                                                     <th style="text-align: center;">Day</th>
-                                                                </s:if>
-                                                                <s:if test="%{weekchangetab == 1}">
+                                                                    </s:if>
+                                                                    <s:if test="%{weekchangetab == 1}">
                                                                     <th style="text-align: center;">Week</th>
-                                                                </s:if>       
-                                                                <s:if test="%{monthchangetab == 1}">
+                                                                    </s:if>       
+                                                                    <s:if test="%{monthchangetab == 1}">
                                                                     <th style="text-align: center;">Month</th>
-                                                                </s:if>
+                                                                    </s:if>
                                                                 <th style="text-align: center;">Last Updated</th>
                                                                 <th style="text-align: center;">Chart</th>
                                                                 <th style="text-align: center;">Edit</th>                                                
@@ -349,15 +349,15 @@
                                                                 <th style="text-align: center;">Keyword</th>
                                                                 <th style="text-align: center;"><img src="https://s3.amazonaws.com/images_ranktracker/bingicon.png" width="20" height="20" alt="" /></th>
                                                                 <th style="text-align: center;">Best Match Rank</th>
-                                                                <s:if test="%{daychangetab == 1}">
+                                                                    <s:if test="%{daychangetab == 1}">
                                                                     <th style="text-align: center;">Day</th>
-                                                                </s:if>
-                                                                <s:if test="%{weekchangetab == 1}">
+                                                                    </s:if>
+                                                                    <s:if test="%{weekchangetab == 1}">
                                                                     <th style="text-align: center;">Week</th>
-                                                                </s:if>       
-                                                                <s:if test="%{monthchangetab == 1}">
+                                                                    </s:if>       
+                                                                    <s:if test="%{monthchangetab == 1}">
                                                                     <th style="text-align: center;">Month</th>
-                                                                </s:if>
+                                                                    </s:if>
                                                                 <th style="text-align: center;">Last Updated</th>
                                                                 <th style="text-align: center;">Chart</th>
                                                                 <th style="text-align: center;">Edit</th>                                                
@@ -385,15 +385,15 @@
                                                 <th style="text-align: center;">Competition</th>
                                                 <th style="text-align: center;">Number of Results</th>
                                                 <th style="text-align: center;" title="Site Indexing">SI</th>
-                                                <s:if test="%{alexatab == 1}">
+                                                    <s:if test="%{alexatab == 1}">
                                                     <th style="text-align: center;" title="Alexa Ranking">Alexa</th>
-                                                </s:if>
-                                                <s:if test="%{backlinkstab == 1}">
+                                                    </s:if>
+                                                    <s:if test="%{backlinkstab == 1}">
                                                     <th style="text-align: center;" title="Backlinks">BL</th>
-                                                </s:if>
-                                                <s:if test="%{monthlysearchstab == 1}">
+                                                    </s:if>
+                                                    <s:if test="%{monthlysearchstab == 1}">
                                                     <th style="text-align: center;" title="Monthly Searches">MS</th>
-                                                </s:if>
+                                                    </s:if>
                                                 <th style="text-align: center;" title="Page Authority">PA</th>
                                                 <th style="text-align: center;" title="Domain Authority">DA</th>
                                             </tr>
@@ -1355,7 +1355,7 @@
                                 Chart
                             </div>
                             <div class="col-md-8">
-                                 <span>KEYWORD : </span>
+                                <span>KEYWORD : </span>
                                 <span id="keywordname"></span>
                                 <s:property value="keyword" />
 
@@ -1403,134 +1403,134 @@
 <script type='text/javascript' src='/dwr/engine.js'></script>
 <script type='text/javascript' src='/dwr/interface/Keywordsuggestion.js'></script>
 <script type="text/javascript">
-    function filterChanged() {
-        if (document.getElementById("checkbox").checked) {
-            dwr.util.removeAllRows("peoplebody");
-            var addkeywords = dwr.util.getValue("addkeyword");
-            if (addkeywords.length === 0) {
-                dwr.util.removeAllRows("peoplebody");
-            } else {
-                Keywordsuggestion.getMatchingforKeywords(addkeywords, fillTable);
-            }
-        }
-        else {
-            dwr.util.removeAllRows("peoplebody");
-        }
-    }
-    function fillTable(people) {
-        var addkeywords = dwr.util.getValue("addkeyword");
-        var filtered = [];
-        dwr.util.removeAllRows("peoplebody");
-        for (i = 0; i < people.length; i++) {
-            filtered.push(people[i]);
-        }
-        if (filtered.length !== 0) {
-            dwr.util.addRows("peoplebody", filtered, [
-                function(element) {
-                    return element;
-                }
-            ], {escapeHtml: false});
-        }
-    }
-    function filterChangeds() {
-        if (document.getElementById("checkboxs").checked) {
-            dwr.util.removeAllRows("peoplebodys");
-            var addkeywords = dwr.util.getValue("addkeywords");
-            if (addkeywords.length === 0) {
-                dwr.util.removeAllRows("peoplebodys");
-            } else {
-                Keywordsuggestion.getMatchingforKeywords(addkeywords, fillTables);
-            }
-        }
-        else {
-            dwr.util.removeAllRows("peoplebodys");
-        }
-    }
-    function fillTables(people) {
-        var addkeywords = dwr.util.getValue("addkeywords");
-        var pattern = new RegExp("(" + addkeywords + ")", "i");
-        var filtered = [];
-        dwr.util.removeAllRows("peoplebodys");
-        for (i = 0; i < people.length; i++) {
-            filtered.push(people[i]);
-        }
-        if (filtered.length !== 0) {
-            dwr.util.addRows("peoplebodys", filtered, [
-                function(element) {
-                    return  element;
-                }
-            ], {escapeHtml: false});
-        }
-    }
-    function editfilterChanged() {
-        if (document.getElementById("editcheckbox").checked) {
-            var addkeywords = dwr.util.getValue("editkeyword");
-            if (addkeywords.length === 0) {
-                dwr.util.removeAllRows("editpeoplebody");
-            } else {
-                Keywordsuggestion.getMatchingforKeywords(addkeywords, editfillTable);
-            }
-        }
-        else {
-            dwr.util.removeAllRows("editpeoplebody");
-        }
-    }
-    function editfillTable(people) {
-        var addkeywords = dwr.util.getValue("editkeyword");
-        var filtered = [];
-        dwr.util.removeAllRows("editpeoplebody");
-        for (i = 0; i < people.length; i++) {
-            filtered.push(people[i]);
-        }
-        if (filtered.length !== 0) {
-            dwr.util.addRows("editpeoplebody", filtered, [
-                function(element) {
-                    return element;
-                }
-            ], {escapeHtml: false});
-        }
-    }
-    function getEventTarget(e) {
-        e = e || window.event;
-        return e.target || e.srcElement;
-    }
-    var ul = document.getElementById('peoplebody');
-    ul.onclick = function(event) {
-        var target = getEventTarget(event);
-        document.getElementById("addkeyword").value = target.innerHTML;
-        dwr.util.removeAllRows("peoplebody");
-    };
-    var ul1 = document.getElementById('peoplebodys');
-    ul1.onclick = function(event) {
-        var target = getEventTarget(event);
-        var addkeywords = dwr.util.getValue("addkeywords");
-        var res = [];
-        res = addkeywords.split("\n");
-        var lst = [];
-        for (i = 0; i < ((res.length) - 1); i++) {
-            lst.push(res[i]);
-        }
-        var old = lst.toString();
-        while (old.indexOf(',') != -1) {
-            old = old.replace(',', '\n');
-        }
-        if (lst == "")
-        {
-            document.getElementById("addkeywords").value = target.innerHTML;
-            dwr.util.removeAllRows("peoplebodys");
-        }
-        else {
-            document.getElementById("addkeywords").value = old + "\n" + target.innerHTML;
-            dwr.util.removeAllRows("peoplebodys");
-        }
-        dwr.util.removeAllRows("peoplebodys");
-    };
-    var editul = document.getElementById('editpeoplebody');
-    editul.onclick = function(event) {
-        var target = getEventTarget(event);
-        document.getElementById("editkeyword").value = target.innerHTML;
-        dwr.util.removeAllRows("editpeoplebody");
-    };
+                            function filterChanged() {
+                                if (document.getElementById("checkbox").checked) {
+                                    dwr.util.removeAllRows("peoplebody");
+                                    var addkeywords = dwr.util.getValue("addkeyword");
+                                    if (addkeywords.length === 0) {
+                                        dwr.util.removeAllRows("peoplebody");
+                                    } else {
+                                        Keywordsuggestion.getMatchingforKeywords(addkeywords, fillTable);
+                                    }
+                                }
+                                else {
+                                    dwr.util.removeAllRows("peoplebody");
+                                }
+                            }
+                            function fillTable(people) {
+                                var addkeywords = dwr.util.getValue("addkeyword");
+                                var filtered = [];
+                                dwr.util.removeAllRows("peoplebody");
+                                for (i = 0; i < people.length; i++) {
+                                    filtered.push(people[i]);
+                                }
+                                if (filtered.length !== 0) {
+                                    dwr.util.addRows("peoplebody", filtered, [
+                                        function (element) {
+                                            return element;
+                                        }
+                                    ], {escapeHtml: false});
+                                }
+                            }
+                            function filterChangeds() {
+                                if (document.getElementById("checkboxs").checked) {
+                                    dwr.util.removeAllRows("peoplebodys");
+                                    var addkeywords = dwr.util.getValue("addkeywords");
+                                    if (addkeywords.length === 0) {
+                                        dwr.util.removeAllRows("peoplebodys");
+                                    } else {
+                                        Keywordsuggestion.getMatchingforKeywords(addkeywords, fillTables);
+                                    }
+                                }
+                                else {
+                                    dwr.util.removeAllRows("peoplebodys");
+                                }
+                            }
+                            function fillTables(people) {
+                                var addkeywords = dwr.util.getValue("addkeywords");
+                                var pattern = new RegExp("(" + addkeywords + ")", "i");
+                                var filtered = [];
+                                dwr.util.removeAllRows("peoplebodys");
+                                for (i = 0; i < people.length; i++) {
+                                    filtered.push(people[i]);
+                                }
+                                if (filtered.length !== 0) {
+                                    dwr.util.addRows("peoplebodys", filtered, [
+                                        function (element) {
+                                            return  element;
+                                        }
+                                    ], {escapeHtml: false});
+                                }
+                            }
+                            function editfilterChanged() {
+                                if (document.getElementById("editcheckbox").checked) {
+                                    var addkeywords = dwr.util.getValue("editkeyword");
+                                    if (addkeywords.length === 0) {
+                                        dwr.util.removeAllRows("editpeoplebody");
+                                    } else {
+                                        Keywordsuggestion.getMatchingforKeywords(addkeywords, editfillTable);
+                                    }
+                                }
+                                else {
+                                    dwr.util.removeAllRows("editpeoplebody");
+                                }
+                            }
+                            function editfillTable(people) {
+                                var addkeywords = dwr.util.getValue("editkeyword");
+                                var filtered = [];
+                                dwr.util.removeAllRows("editpeoplebody");
+                                for (i = 0; i < people.length; i++) {
+                                    filtered.push(people[i]);
+                                }
+                                if (filtered.length !== 0) {
+                                    dwr.util.addRows("editpeoplebody", filtered, [
+                                        function (element) {
+                                            return element;
+                                        }
+                                    ], {escapeHtml: false});
+                                }
+                            }
+                            function getEventTarget(e) {
+                                e = e || window.event;
+                                return e.target || e.srcElement;
+                            }
+                            var ul = document.getElementById('peoplebody');
+                            ul.onclick = function (event) {
+                                var target = getEventTarget(event);
+                                document.getElementById("addkeyword").value = target.innerHTML;
+                                dwr.util.removeAllRows("peoplebody");
+                            };
+                            var ul1 = document.getElementById('peoplebodys');
+                            ul1.onclick = function (event) {
+                                var target = getEventTarget(event);
+                                var addkeywords = dwr.util.getValue("addkeywords");
+                                var res = [];
+                                res = addkeywords.split("\n");
+                                var lst = [];
+                                for (i = 0; i < ((res.length) - 1); i++) {
+                                    lst.push(res[i]);
+                                }
+                                var old = lst.toString();
+                                while (old.indexOf(',') != -1) {
+                                    old = old.replace(',', '\n');
+                                }
+                                if (lst == "")
+                                {
+                                    document.getElementById("addkeywords").value = target.innerHTML;
+                                    dwr.util.removeAllRows("peoplebodys");
+                                }
+                                else {
+                                    document.getElementById("addkeywords").value = old + "\n" + target.innerHTML;
+                                    dwr.util.removeAllRows("peoplebodys");
+                                }
+                                dwr.util.removeAllRows("peoplebodys");
+                            };
+                            var editul = document.getElementById('editpeoplebody');
+                            editul.onclick = function (event) {
+                                var target = getEventTarget(event);
+                                document.getElementById("editkeyword").value = target.innerHTML;
+                                dwr.util.removeAllRows("editpeoplebody");
+                            };
 </script>
 <!--script for keyword suggestion-->
 
@@ -1542,424 +1542,424 @@
 <script type="text/javascript" src="http://www.highcharts.com/highslide/highslide.config.js" charset="utf-8"></script>
 
 <script type="text/javascript">
-    var opened = "0";
-    var alertMes = "";
-    function drawSocialChart(urlId, range) {
-        var jString = "{\"urlId\":\"" + urlId + "\" , \"range\":\"" + range + "\"}";
-        var chart;
-        $.getJSON(
-        'ajax/getSocialData.action',
-        {
-            jString: jString
-        },
-        function(jMap) {
-            chart = new Highcharts.Chart({
-                chart: {
-                    renderTo: 'socialChartBlock',
-                    type: 'line',
-                    marginRight: 130,
-                    marginBottom: 25,
-                    width: 1100,
-                    height: 200
-                },
-                title: jMap.dataMap.title,
-                subtitle: {
-                    text: '',
-                    x: -20
-                },
-                credits: {
-                    enabled: false
-                    // text: 'globustracker.com',
-                    // href: 'http://www.globustracker.com/'
-                },
-                xAxis: {
-                    type: 'datetime',
-                    dateTimeLabelFormats: {
-                        day: '%b %e '
-                    }
-                },
-                yAxis: {
-                    title: {
-                        text: 'Rankings'
-                    },
-                    allowDecimals: false,
-                    min: 0,
-                    tickPixelInterval: 20,
-                    plotLines: [{
-                            value: 0,
-                            width: 1,
-                            color: '#808080'
-                        }]
-                },
-                tooltip: {
-                    crosshairs: true,
-                    shared: true
-                },
-                legend: {
-                    layout: 'horizontal',
-                    align: 'top',
-                    verticalAlign: 'top',
-                    x: 0,
-                    y: 0,
-                    borderWidth: 0
-                },
-                series: eval(jMap.dataMap.sbData)
-            });
+                            var opened = "0";
+                            var alertMes = "";
+                            function drawSocialChart(urlId, range) {
+                                var jString = "{\"urlId\":\"" + urlId + "\" , \"range\":\"" + range + "\"}";
+                                var chart;
+                                $.getJSON(
+                                        'ajax/getSocialData.action',
+                                        {
+                                            jString: jString
+                                        },
+                                function (jMap) {
+                                    chart = new Highcharts.Chart({
+                                        chart: {
+                                            renderTo: 'socialChartBlock',
+                                            type: 'line',
+                                            marginRight: 130,
+                                            marginBottom: 25,
+                                            width: 1100,
+                                            height: 200
+                                        },
+                                        title: jMap.dataMap.title,
+                                        subtitle: {
+                                            text: '',
+                                            x: -20
+                                        },
+                                        credits: {
+                                            enabled: false
+                                                    // text: 'globustracker.com',
+                                                    // href: 'http://www.globustracker.com/'
+                                        },
+                                        xAxis: {
+                                            type: 'datetime',
+                                            dateTimeLabelFormats: {
+                                                day: '%b %e '
+                                            }
+                                        },
+                                        yAxis: {
+                                            title: {
+                                                text: 'Rankings'
+                                            },
+                                            allowDecimals: false,
+                                            min: 0,
+                                            tickPixelInterval: 20,
+                                            plotLines: [{
+                                                    value: 0,
+                                                    width: 1,
+                                                    color: '#808080'
+                                                }]
+                                        },
+                                        tooltip: {
+                                            crosshairs: true,
+                                            shared: true
+                                        },
+                                        legend: {
+                                            layout: 'horizontal',
+                                            align: 'top',
+                                            verticalAlign: 'top',
+                                            x: 0,
+                                            y: 0,
+                                            borderWidth: 0
+                                        },
+                                        series: eval(jMap.dataMap.sbData)
+                                    });
 
-        });
-    }
+                                });
+                            }
 
-    function drawChart(keywordId, range) {
-        var jString = "{\"keywordId\":\"" + keywordId + "\" , \"range\":\"" + range + "\"}";
-        var chart;
-        $.getJSON(
-        'ajax/getData.action',
-        {
-            jString: jString
-        },
-        function(jMap) {
-            chart = new Highcharts.Chart({
-                chart: {
-                    renderTo: 'chartBlock',
-                    type: 'line',
-                    marginRight: 130,
-                    marginBottom: 25,
-                    width: 1100,
-                    height: 200,
-                    zoomType: 'x'
-                },
-                title: jMap.dataMap.title,
-                subtitle: {
-                    text: '',
-                    x: -20
-                },
-                credits: {
-                    enabled: false
-                },
-                xAxis: {
-                    //categories: eval(jMap.dataMap.sbRange),
-                    type: 'datetime',
-                    dateTimeLabelFormats: {
-                        day: '%b %e '
-                    },
-                    plotBands: eval(jMap.dataMap.gtEvent)
-                },
-                yAxis: {
-                    title: {
-                        text: 'Rankings'
-                    },
-                    allowDecimals: false,
-                    reversed: true,
-                    min: 0,
-                    tickPixelInterval: 20,
-                    plotLines: [{
-                            value: 0,
-                            width: 1,
-                            color: '#808080'
-                        }]
-                },
-                tooltip: {
-                    crosshairs: true,
-                    shared: true
-                },
-                //                                                                exporting: {
-                //                                                                    buttons: {
-                //                                                                        customButton: {
-                //                                                                            x: -62,
-                //                                                                            symbol: 'url(https://cdn1.iconfinder.com/data/icons/large-glossy-icons/20/Target.png)',
-                //                                                                            symbolX: 7.5,
-                //                                                                            symbolY: 6,
-                //                                                                            onclick: function() {
-                //                                                                                $("#myGoal").toggle();
-                //                                                                                $("#goalkewordId").val(keywordId);
-                //                                                                                $("#backgrd").attr("class", "modal-backdrop fade in");
-                //                                                                            }
-                //                                                                        }
-                //                                                                    }
-                //                                                                },
-                legend: {
-                    layout: 'horizontal',
-                    align: 'top',
-                    verticalAlign: 'top',
-                    x: 300,
-                    y: 0,
-                    borderWidth: 0
-                },
-                series: eval(jMap.dataMap.sbData)
-            });
-            $('#keywordname').html(jMap.dataMap.keyword);
-        });
-    }
+                            function drawChart(keywordId, range) {
+                                var jString = "{\"keywordId\":\"" + keywordId + "\" , \"range\":\"" + range + "\"}";
+                                var chart;
+                                $.getJSON(
+                                        'ajax/getData.action',
+                                        {
+                                            jString: jString
+                                        },
+                                function (jMap) {
+                                    chart = new Highcharts.Chart({
+                                        chart: {
+                                            renderTo: 'chartBlock',
+                                            type: 'line',
+                                            marginRight: 130,
+                                            marginBottom: 25,
+                                            width: 1100,
+                                            height: 200,
+                                            zoomType: 'x'
+                                        },
+                                        title: jMap.dataMap.title,
+                                        subtitle: {
+                                            text: '',
+                                            x: -20
+                                        },
+                                        credits: {
+                                            enabled: false
+                                        },
+                                        xAxis: {
+                                            //categories: eval(jMap.dataMap.sbRange),
+                                            type: 'datetime',
+                                            dateTimeLabelFormats: {
+                                                day: '%b %e '
+                                            },
+                                            plotBands: eval(jMap.dataMap.gtEvent)
+                                        },
+                                        yAxis: {
+                                            title: {
+                                                text: 'Rankings'
+                                            },
+                                            allowDecimals: false,
+                                            reversed: true,
+                                            min: 0,
+                                            tickPixelInterval: 20,
+                                            plotLines: [{
+                                                    value: 0,
+                                                    width: 1,
+                                                    color: '#808080'
+                                                }]
+                                        },
+                                        tooltip: {
+                                            crosshairs: true,
+                                            shared: true
+                                        },
+                                        //                                                                exporting: {
+                                        //                                                                    buttons: {
+                                        //                                                                        customButton: {
+                                        //                                                                            x: -62,
+                                        //                                                                            symbol: 'url(https://cdn1.iconfinder.com/data/icons/large-glossy-icons/20/Target.png)',
+                                        //                                                                            symbolX: 7.5,
+                                        //                                                                            symbolY: 6,
+                                        //                                                                            onclick: function() {
+                                        //                                                                                $("#myGoal").toggle();
+                                        //                                                                                $("#goalkewordId").val(keywordId);
+                                        //                                                                                $("#backgrd").attr("class", "modal-backdrop fade in");
+                                        //                                                                            }
+                                        //                                                                        }
+                                        //                                                                    }
+                                        //                                                                },
+                                        legend: {
+                                            layout: 'horizontal',
+                                            align: 'top',
+                                            verticalAlign: 'top',
+                                            x: 300,
+                                            y: 0,
+                                            borderWidth: 0
+                                        },
+                                        series: eval(jMap.dataMap.sbData)
+                                    });
+                                    $('#keywordname').html(jMap.dataMap.keyword);
+                                });
+                            }
 
-    function drawComparisionChart(campaignId, range, engine) {
-        var jString = "{\"campaignId\":\"" + campaignId + "\" , \"range\":\"" + range + "\" , \"engine\":\"" + engine + "\"}";
-        var chart;
-        $.getJSON(
-        'ajax/getCampaignChartData.action',
-        {
-            jString: jString
-        },
-        function(jMap) {
-            chart = new Highcharts.Chart({
-                chart: {
-                    renderTo: 'chartBlock',
-                    type: 'line',
-                    marginRight: 130,
-                    marginBottom: 25,
-                    width: 1100,
-                    height: 200,
-                    zoomType: 'x'
-                },
-                title: jMap.dataMap.title,
-                subtitle: {
-                    text: '',
-                    x: -20
-                },
-                credits: {
-                    enabled: false
-                    //                    text: 'globustracker.com',
-                    //                    href: 'http://www.globustracker.com/'
-                },
-                xAxis: {
-                    //categories: eval(jMap.dataMap.sbRange),
-                    type: 'datetime',
-                    dateTimeLabelFormats: {
-                        day: '%b %e '
-                    }
+                            function drawComparisionChart(campaignId, range, engine) {
+                                var jString = "{\"campaignId\":\"" + campaignId + "\" , \"range\":\"" + range + "\" , \"engine\":\"" + engine + "\"}";
+                                var chart;
+                                $.getJSON(
+                                        'ajax/getCampaignChartData.action',
+                                        {
+                                            jString: jString
+                                        },
+                                function (jMap) {
+                                    chart = new Highcharts.Chart({
+                                        chart: {
+                                            renderTo: 'chartBlock',
+                                            type: 'line',
+                                            marginRight: 130,
+                                            marginBottom: 25,
+                                            width: 1100,
+                                            height: 200,
+                                            zoomType: 'x'
+                                        },
+                                        title: jMap.dataMap.title,
+                                        subtitle: {
+                                            text: '',
+                                            x: -20
+                                        },
+                                        credits: {
+                                            enabled: false
+                                                    //                    text: 'globustracker.com',
+                                                    //                    href: 'http://www.globustracker.com/'
+                                        },
+                                        xAxis: {
+                                            //categories: eval(jMap.dataMap.sbRange),
+                                            type: 'datetime',
+                                            dateTimeLabelFormats: {
+                                                day: '%b %e '
+                                            }
 
-                },
-                yAxis: {
-                    title: {
-                        text: 'Rankings'
-                    },
-                    allowDecimals: false,
-                    reversed: true,
-                    min: 0,
-                    tickPixelInterval: 20
+                                        },
+                                        yAxis: {
+                                            title: {
+                                                text: 'Rankings'
+                                            },
+                                            allowDecimals: false,
+                                            reversed: true,
+                                            min: 0,
+                                            tickPixelInterval: 20
 
-                },
-                tooltip: {
-                    crosshairs: true,
-                    shared: true
-                },
-                legend: {
-                    layout: 'horizontal',
-                    align: 'center',
-                    verticalAlign: 'top',
-                    // x: 55,
-                    y: 0,
-                    itemDistance: 14,
-                    borderWidth: 0
-                },
-                series: eval(jMap.dataMap.sbData)
-            });
+                                        },
+                                        tooltip: {
+                                            crosshairs: true,
+                                            shared: true
+                                        },
+                                        legend: {
+                                            layout: 'horizontal',
+                                            align: 'center',
+                                            verticalAlign: 'top',
+                                            // x: 55,
+                                            y: 0,
+                                            itemDistance: 14,
+                                            borderWidth: 0
+                                        },
+                                        series: eval(jMap.dataMap.sbData)
+                                    });
 
-        });
-    }
+                                });
+                            }
 
-    function addSerpsKeyword() {
-        var keywords = $("#addkeyword").val();
-        var url = $("#addurl").val();
-        var linkGoogle = $("#linkGoogle").val();
+                            function addSerpsKeyword() {
+                                var keywords = $("#addkeyword").val();
+                                var url = $("#addurl").val();
+                                var linkGoogle = $("#linkGoogle").val();
 
-        if ($("#addurl").val().trim().length === 0) {
-            alert("Please enter URL");
-            return false;
-        }
+                                if ($("#addurl").val().trim().length === 0) {
+                                    alert("Please enter URL");
+                                    return false;
+                                }
 
-        var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
-        if (!pattern.test(url)) {
-            alert("Url is not valid! Please enter the URL in correct format");
-            return false;
-        }
+                                var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+                                if (!pattern.test(url)) {
+                                    alert("Url is not valid! Please enter the URL in correct format");
+                                    return false;
+                                }
 
-        if ($("#addkeyword").val().trim().length === 0) {
-            alert("Please enter Keyword");
-            return false;
-        }
-        //  var regexp=/^[a-zA-Z0-9_\d\s]+$/i;
-        //  var validity=regexp.test(keywords);
-        //  if (!validity) {
-        //      alert("Keyword can have alphanumeric character and special character '_' ");
-        //      return false;
-        //  }
+                                if ($("#addkeyword").val().trim().length === 0) {
+                                    alert("Please enter Keyword");
+                                    return false;
+                                }
+                                //  var regexp=/^[a-zA-Z0-9_\d\s]+$/i;
+                                //  var validity=regexp.test(keywords);
+                                //  if (!validity) {
+                                //      alert("Keyword can have alphanumeric character and special character '_' ");
+                                //      return false;
+                                //  }
 
-        $.post(
-        'ajax/addSerpsKeyword.action',
-        {
-            arrKeywords: keywords,
-            url: url,
-            linkGoogle: linkGoogle
-        },
-        function(jMessage) {
-            alertMes = jMessage.message;
-            window.location = "serpskeywords.action";
-        },
-        'json');
-    }
+                                $.post(
+                                        'ajax/addSerpsKeyword.action',
+                                        {
+                                            arrKeywords: keywords,
+                                            url: url,
+                                            linkGoogle: linkGoogle
+                                        },
+                                function (jMessage) {
+                                    alertMes = jMessage.message;
+                                    window.location = "serpskeywords.action";
+                                },
+                                        'json');
+                            }
 
-    function addSerpsKeywords() {
-        var keywords = $("#addkeywords").val();
-        var url = $("#addurls").val();
-        var linkGoogle = $("#linkGoogles").val();
+                            function addSerpsKeywords() {
+                                var keywords = $("#addkeywords").val();
+                                var url = $("#addurls").val();
+                                var linkGoogle = $("#linkGoogles").val();
 
-        if ($("#addurls").val().trim().length === 0) {
-            alert("Please enter URL");
-            return false;
-        }
+                                if ($("#addurls").val().trim().length === 0) {
+                                    alert("Please enter URL");
+                                    return false;
+                                }
 
-        var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
-        if (!pattern.test(url)) {
-            alert("Url is not valid! Please enter the URL in correct format");
-            return false;
-        }
+                                var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+                                if (!pattern.test(url)) {
+                                    alert("Url is not valid! Please enter the URL in correct format");
+                                    return false;
+                                }
 
-        if ($("#addkeywords").val().trim().length === 0) {
-            alert("Please enter Keyword");
-            return false;
-        }
-        //  var regexp=/^[a-zA-Z0-9_\d\s]+$/i;
+                                if ($("#addkeywords").val().trim().length === 0) {
+                                    alert("Please enter Keyword");
+                                    return false;
+                                }
+                                //  var regexp=/^[a-zA-Z0-9_\d\s]+$/i;
 
-        //  var eachkeyword= keywords.split( "\n" );
+                                //  var eachkeyword= keywords.split( "\n" );
 
-        //  for( var i = 0; i < eachkeyword.length; ++i ) {
-        //      var check = regexp.test(eachkeyword[ i ]); 
-        //      if( !check ) {
-        //          alert("Keyword can have alphanumeric character and special character '_' ");
-        //          return false;
-        //      }
-        //  }
+                                //  for( var i = 0; i < eachkeyword.length; ++i ) {
+                                //      var check = regexp.test(eachkeyword[ i ]); 
+                                //      if( !check ) {
+                                //          alert("Keyword can have alphanumeric character and special character '_' ");
+                                //          return false;
+                                //      }
+                                //  }
 
-        $.post(
-        'ajax/addSerpsKeyword.action',
-        {
-            arrKeywords: keywords,
-            url: url,
-            linkGoogle: linkGoogle
-        },
-        function(jMessage) {
-            alertMes = jMessage.message;
-            window.location = "serpskeywords.action";
-        },
-        'json');
-    }
+                                $.post(
+                                        'ajax/addSerpsKeyword.action',
+                                        {
+                                            arrKeywords: keywords,
+                                            url: url,
+                                            linkGoogle: linkGoogle
+                                        },
+                                function (jMessage) {
+                                    alertMes = jMessage.message;
+                                    window.location = "serpskeywords.action";
+                                },
+                                        'json');
+                            }
 
-    function addSocialSignalUrl()
-    {
-        var url = $("#addsocialurl").val();
-        if ($("#addsocialurl").val().trim().length === 0) {
-            alert("Please enter URL");
-            return false;
-        }
+                            function addSocialSignalUrl()
+                            {
+                                var url = $("#addsocialurl").val();
+                                if ($("#addsocialurl").val().trim().length === 0) {
+                                    alert("Please enter URL");
+                                    return false;
+                                }
 
-        var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
-        if (!pattern.test(url)) {
-            alert("Url is not valid! Please enter the URL in correct format");
-            return false;
-        }
+                                var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+                                if (!pattern.test(url)) {
+                                    alert("Url is not valid! Please enter the URL in correct format");
+                                    return false;
+                                }
 
-        $.post(
-        'ajax/addSocialSignalUrl.action',
-        {
-            addUrl: url
-        },
-        function(jMessage) {
-            alertMes = jMessage.message;
-            window.location = "serpskeywords.action";
-        },
-        'json');
-    }
+                                $.post(
+                                        'ajax/addSocialSignalUrl.action',
+                                        {
+                                            addUrl: url
+                                        },
+                                function (jMessage) {
+                                    alertMes = jMessage.message;
+                                    window.location = "serpskeywords.action";
+                                },
+                                        'json');
+                            }
 
-    function editKeyword(keywordId, url, linkGoogle, keyword) {
-        try {
-            document.editForm.keywordId.value = keywordId;
-            document.editForm.url.value = url;
-            document.editForm.linkGoogle.value = linkGoogle;
-            document.editForm.keyword.value = keyword;
-        } catch (e)
-        {
-            alert(e);
-        }
+                            function editKeyword(keywordId, url, linkGoogle, keyword) {
+                                try {
+                                    document.editForm.keywordId.value = keywordId;
+                                    document.editForm.url.value = url;
+                                    document.editForm.linkGoogle.value = linkGoogle;
+                                    document.editForm.keyword.value = keyword;
+                                } catch (e)
+                                {
+                                    alert(e);
+                                }
 
-    }
+                            }
 
-    function editUrl(urlId, url) {
-        try {
-            url = "http://" + url;
-            document.editUrlForm.urlId.value = urlId;
-            document.editUrlForm.editsocialsignalurl.value = url;
+                            function editUrl(urlId, url) {
+                                try {
+                                    url = "http://" + url;
+                                    document.editUrlForm.urlId.value = urlId;
+                                    document.editUrlForm.editsocialsignalurl.value = url;
 
-        } catch (e)
-        {
-            alert(e);
-        }
-    }
+                                } catch (e)
+                                {
+                                    alert(e);
+                                }
+                            }
 
-    function editSerpsKeyword() {
-        var ekeywordId = $("#keywordId").val();
-        var editurl = $("#editurl").val();
-        var linkGoogle = $("#linkGoogleedit").val();
-        var ekeyword = $("#editkeyword").val();
+                            function editSerpsKeyword() {
+                                var ekeywordId = $("#keywordId").val();
+                                var editurl = $("#editurl").val();
+                                var linkGoogle = $("#linkGoogleedit").val();
+                                var ekeyword = $("#editkeyword").val();
 
-        if ($("#editurl").val().trim().length === 0) {
-            alert("Please enter Url");
-            return false;
-        }
+                                if ($("#editurl").val().trim().length === 0) {
+                                    alert("Please enter Url");
+                                    return false;
+                                }
 
-        if ($("#editkeyword").val().trim().length === 0) {
-            alert("Please enter Keyword");
-            return false;
-        }
+                                if ($("#editkeyword").val().trim().length === 0) {
+                                    alert("Please enter Keyword");
+                                    return false;
+                                }
 
-        //   var regexp=/^[a-zA-Z0-9_\d\s]+$/i;
-        //  var validity=regexp.test(ekeyword);
-        //   if (!validity) {
-        //       alert("Keyword can have alphanumeric character and special character '_' ");
-        //       return false;
-        //   }
+                                //   var regexp=/^[a-zA-Z0-9_\d\s]+$/i;
+                                //  var validity=regexp.test(ekeyword);
+                                //   if (!validity) {
+                                //       alert("Keyword can have alphanumeric character and special character '_' ");
+                                //       return false;
+                                //   }
 
-        $.post(
-        'ajax/editSerpsKeyword.action',
-        {
-            editkeywordId: ekeywordId,
-            editarrKeywords: ekeyword,
-            editurl: editurl,
-            editlinkGoogle: linkGoogle
-        },
-        function(jMessage) {
-            alertMes = jMessage.message;
-            window.location = "serpskeywords.action";
-        },
-        'json');
-    }
+                                $.post(
+                                        'ajax/editSerpsKeyword.action',
+                                        {
+                                            editkeywordId: ekeywordId,
+                                            editarrKeywords: ekeyword,
+                                            editurl: editurl,
+                                            editlinkGoogle: linkGoogle
+                                        },
+                                function (jMessage) {
+                                    alertMes = jMessage.message;
+                                    window.location = "serpskeywords.action";
+                                },
+                                        'json');
+                            }
 
-    function editSocialSignalUrl() {
-        var eurlId = $("#urlId").val();
-        var eurl = $("#editsocialsignalurl").val();
+                            function editSocialSignalUrl() {
+                                var eurlId = $("#urlId").val();
+                                var eurl = $("#editsocialsignalurl").val();
 
-        if ($("#editsocialsignalurl").val().trim().length === 0) {
-            alert("Please enter Url");
-            return false;
-        }
+                                if ($("#editsocialsignalurl").val().trim().length === 0) {
+                                    alert("Please enter Url");
+                                    return false;
+                                }
 
-        var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
-        if (!pattern.test(eurl)) {
-            alert("Url is not valid! Please enter the URL in correct format");
-            return false;
-        }
+                                var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+                                if (!pattern.test(eurl)) {
+                                    alert("Url is not valid! Please enter the URL in correct format");
+                                    return false;
+                                }
 
-        $.post(
-        'ajax/editSocialSignalUrl.action',
-        {
-            eurlId: eurlId,
-            eurl: eurl
-        },
-        function(jMessage) {
-            alertMes = jMessage.message;
-            window.location = "serpskeywords.action";
-        },
-        'json');
-    }
+                                $.post(
+                                        'ajax/editSocialSignalUrl.action',
+                                        {
+                                            eurlId: eurlId,
+                                            eurl: eurl
+                                        },
+                                function (jMessage) {
+                                    alertMes = jMessage.message;
+                                    window.location = "serpskeywords.action";
+                                },
+                                        'json');
+                            }
 
 
 </script>
@@ -1967,51 +1967,51 @@
 <script type="text/javascript" src="https://s3.amazonaws.com/js_ranktracker/script.js"></script>
 <script type="text/javascript">
 
-    function deleteKeyword(keywordId)
-    {
-        try {
-            document.deleteForm.keywordId.value = keywordId;
-        } catch (e) {
-            alert(e);
-        }
-    }
-    function deleteSerpsKeyword() {
-        var jString = document.deleteForm.keywordId.value;
-        $.post(
-        'ajax/deleteSerpsKeyword.action',
-        {
-            jString: jString
-        },
-        function(jMessage) {
-            alertMes = jMessage.message;
-            window.location = "serpskeywords.action";
-        },
-        'json');
-    }
+                            function deleteKeyword(keywordId)
+                            {
+                                try {
+                                    document.deleteForm.keywordId.value = keywordId;
+                                } catch (e) {
+                                    alert(e);
+                                }
+                            }
+                            function deleteSerpsKeyword() {
+                                var jString = document.deleteForm.keywordId.value;
+                                $.post(
+                                        'ajax/deleteSerpsKeyword.action',
+                                        {
+                                            jString: jString
+                                        },
+                                function (jMessage) {
+                                    alertMes = jMessage.message;
+                                    window.location = "serpskeywords.action";
+                                },
+                                        'json');
+                            }
 
-    function deleteUrl(urlId)
-    {
-        try {
-            document.deleteUrlForm.urlId.value = urlId;
-        } catch (e) {
-            alert(e);
-        }
-    }
+                            function deleteUrl(urlId)
+                            {
+                                try {
+                                    document.deleteUrlForm.urlId.value = urlId;
+                                } catch (e) {
+                                    alert(e);
+                                }
+                            }
 
-    function deleteSocialSignalUrl() {
-        var delurlId = document.deleteUrlForm.urlId.value;
+                            function deleteSocialSignalUrl() {
+                                var delurlId = document.deleteUrlForm.urlId.value;
 
-        $.post(
-        'ajax/deleteSocialSignalUrl.action',
-        {
-            delurlId: delurlId
-        },
-        function(jMessage) {
-            alertMes = jMessage.message;
-            window.location = "serpskeywords.action";
-        },
-        'json');
-    }
+                                $.post(
+                                        'ajax/deleteSocialSignalUrl.action',
+                                        {
+                                            delurlId: delurlId
+                                        },
+                                function (jMessage) {
+                                    alertMes = jMessage.message;
+                                    window.location = "serpskeywords.action";
+                                },
+                                        'json');
+                            }
 </script>
 
 <script type="text/javascript">
@@ -2048,7 +2048,7 @@
         // Create a function that will receive data 
         // sent from the server and will update
         // div section in the same page.
-        ajaxRequest.onreadystatechange = function() {
+        ajaxRequest.onreadystatechange = function () {
             if (ajaxRequest.readyState == 4) {
                 //var ajaxDisplay = document.getElementById('ajaxDiv');
                 //alert("hiii"+ajaxRequest.responseText)
@@ -2070,7 +2070,7 @@
 
     }
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         if ($(window).scrollTop() + $(window).height() == $(document).height()) {
             ajaxFunction();
@@ -2332,10 +2332,10 @@
             htmlResult = htmlResult + "<td style='text-align: center;'>" + output.seokeywords[i].GoogleDA + "</td>";
             htmlResult = htmlResult + "<tr>";
         }
-        
+
         document.getElementById('seoKeywordsBody').innerHTML = document.getElementById('seoKeywordsBody').innerHTML + htmlResult;
     }
 </script>
 <script>
-    $('#left-panel').css('display','none');
+    $('#left-panel').css('display', 'none');
 </script> 

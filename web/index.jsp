@@ -118,6 +118,6 @@
     }
 
 
-    response.sendRedirect("home.action");%>
+    response.sendRedirect("signIn.action");%>
 
 <%-- response.sendRedirect("sitesList.action"); --%>

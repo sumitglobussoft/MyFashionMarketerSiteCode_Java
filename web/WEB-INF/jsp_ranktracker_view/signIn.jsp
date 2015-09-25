@@ -31,9 +31,9 @@
             <div class="row header">
                 <div class="col-md-12">
                     <h3 class="logo">
-                        <a href="home.action"><img class="img-responsive img_mid" src="views/images_ranktracker/Globustracker-logo-present.png"></a>
+                        <a href="home.action"></a>
                     </h3>
-                    <h4>Sign in to your account</h4>
+                    <h4></h4>
                 </div>
             </div>
             <div class="row">
@@ -58,11 +58,11 @@
                                             <input type="password" class="form-control" id="passwordAdded" name="passwordAdded">
                                             <s:hidden name="password" id="password" />
                                         </div>
-                                        <!--                                        <div class="checkbox">
+                                                                                <div class="checkbox">
                                                                                     <label>
                                                                                         <input type="checkbox"> Remember me
                                                                                     </label>
-                                                                                </div>-->
+                                                                                </div>
 
                                         <div class="form-group pull-right" style="margin-bottom: auto">
                                             <label for="password"><a href="forgotPassword.action"><h5>Forgot password?</h5></a></label>
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>       
-
+                           
         <!-- javascript -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 

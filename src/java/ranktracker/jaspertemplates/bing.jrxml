@@ -104,7 +104,7 @@
 			</rectangle>
 			<image scaleImage="RealSize">
 				<reportElement x="12" y="6" width="350" height="49" forecolor="#000000" uuid="1751defb-86eb-4c62-9822-2cc415d04aa7"/>
-				<imageExpression><![CDATA["https://s3.amazonaws.com/images_ranktracker/Globustracker-logo-present.png"]]></imageExpression>
+				<imageExpression><![CDATA["https://s3.amazonaws.com/images-globustracker/myfashionmarketer.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement positionType="FixRelativeToBottom" x="318" y="163" width="160" height="32" forecolor="#FFFFFF" uuid="4e959dd0-4e3b-4bcd-b4d5-658eb4fe19e5"/>
