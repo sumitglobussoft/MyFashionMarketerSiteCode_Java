@@ -33,18 +33,18 @@
 
         <!-- Basic Styles -->
         <!--<link rel="stylesheet" type="text/css" media="screen" href="https://s3.amazonaws.com/css-globustracker/bootstrap.min.css">-->
-        <link href="views/css_ranktracker/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../../views/css_ranktracker/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
 
         <!-- SmartAdmin Styles : Please note (smartadmin-production.css) was created using LESS variables -->
 <!--        <link rel="stylesheet" type="text/css" media="screen" href="https://s3.amazonaws.com/css-globustracker/admin/smartadmin-production.css">
         <link rel="stylesheet" type="text/css" media="screen" href="https://s3.amazonaws.com/css-globustracker/admin/smartadmin-skins.css">-->
-        <link href="views/css_ranktracker/admin/smartadmin-production.css" rel="stylesheet" type="text/css"/>
-        <link href="views/css_ranktracker/admin/smartadmin-skins.css" rel="stylesheet" type="text/css"/>
+        <link href="../../views/css_ranktracker/admin/smartadmin-production.css" rel="stylesheet" type="text/css"/>
+        <link href="../../views/css_ranktracker/admin/smartadmin-skins.css" rel="stylesheet" type="text/css"/>
         <!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
         <!--<link rel="stylesheet" type="text/css" media="screen" href="https://s3.amazonaws.com/css-globustracker/admin/demo.css">-->
-        <link href="views/css_ranktracker/admin/demo.css" rel="stylesheet" type="text/css"/>
-        <link href="views/css_ranktracker/custom.css" rel="stylesheet" type="text/css"/>
+        <link href="../../views/css_ranktracker/admin/demo.css" rel="stylesheet" type="text/css"/>
+        <link href="../../views/css_ranktracker/custom.css" rel="stylesheet" type="text/css"/>
 
         <!-- GOOGLE FONT -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
@@ -142,34 +142,34 @@
 
     <!-- BOOTSTRAP JS -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/bootstrap/bootstrap.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/bootstrap/bootstrap.min.js" type="text/javascript"></script>
     <!-- CUSTOM NOTIFICATION -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/notification/SmartNotification.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/notification/SmartNotification.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/notification/SmartNotification.min.js" type="text/javascript"></script>
     <!-- JARVIS WIDGETS -->
     <!--        <script src="https://s3.amazonaws.com/js-globustracker/admin/smartwidgets/jarvis.widget.min.js"></script>-->
 
     <!-- EASY PIE CHARTS -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js" type="text/javascript"></script>
     <!-- SPARKLINES -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/plugin/sparkline/jquery.sparkline.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/plugin/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/plugin/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
     <!-- JQUERY VALIDATE -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/plugin/jquery-validate/jquery.validate.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/plugin/jquery-validate/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/plugin/jquery-validate/jquery.validate.min.js" type="text/javascript"></script>
     <!-- JQUERY MASKED INPUT -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/plugin/masked-input/jquery.maskedinput.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/plugin/masked-input/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/plugin/masked-input/jquery.maskedinput.min.js" type="text/javascript"></script>
     <!-- JQUERY SELECT2 INPUT -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/plugin/select2/select2.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/plugin/select2/select2.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/plugin/select2/select2.min.js" type="text/javascript"></script>
     <!-- JQUERY UI + Bootstrap Slider -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/plugin/bootstrap-slider/bootstrap-slider.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/plugin/bootstrap-slider/bootstrap-slider.min.js" type="text/javascript"></script>
     <!-- browser msie issue fix -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/plugin/msie-fix/jquery.mb.browser.min.js"></script>-->
-    <script src="views/js_ranktracker/admin/plugin/msie-fix/jquery.mb.browser.min.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/plugin/msie-fix/jquery.mb.browser.min.js" type="text/javascript"></script>
     <!-- FastClick: For mobile devices: you can disable this in app.js
     <script src="js/admin/plugin/fastclick/fastclick.js"></script> -->
 
@@ -181,10 +181,10 @@
 
     <!-- Demo purpose only -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/demo.js"></script>-->
-    <script src="views/js_ranktracker/admin/demo.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/demo.js" type="text/javascript"></script>
     <!-- MAIN APP JS FILE -->
     <!--<script src="https://s3.amazonaws.com/js-globustracker/admin/app.js"></script>-->
-    <script src="views/js_ranktracker/admin/app.js" type="text/javascript"></script>
+    <script src="../../views/js_ranktracker/admin/app.js" type="text/javascript"></script>
     <script type="text/javascript">
         // DO NOT REMOVE : GLOBAL FUNCTIONS!
         pageSetUp();
